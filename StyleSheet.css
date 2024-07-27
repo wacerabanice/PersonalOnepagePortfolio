@@ -1,0 +1,39 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Container for the two-column layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Left column styling */
+.left-column {
+    flex: 2; /* Takes up remaining space */
+}
+
+    .left-column img {
+        width: 100%; /* Make image responsive */
+        height: auto;
+        border-radius: 8px; /* Optional: add rounded corners to image */
+    }
+
+/* Right column styling */
+.right-column {
+    flex: 1; /* Takes up more space compared to the left column */
+}
+
+    .right-column h1 {
+        margin-top: 0; /* Remove default top margin */
+    }
+
+    .right-column p {
+        margin-bottom: 1em; /* Add space between paragraphs */
+    }
